@@ -12,7 +12,10 @@ public class Example {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(Example.class, args);
+        // SpringApplication.run(Example.class, args);
+        SpringApplication app = new SpringApplication(Example.class);
+        app.setBannerMode(Banner.Mode.OFF);
+        app.run(args);
     }
 
 }
